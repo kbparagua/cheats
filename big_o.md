@@ -5,8 +5,8 @@
 Execution time is constant regardless of input size.
 
 ```ruby
-def first_is_nil?(list)
-  list.first.nil?
+def first_is_nil?(input)
+  input.first.nil?
 end
 ```
 
@@ -15,8 +15,8 @@ end
 Execution time is directly proportional to the input size.
 
 ```ruby
-def has_nil?(list)
-  list.each do |element|
+def has_nil?(input)
+  input.each do |element|
     return true if element.nil?
   end
   
