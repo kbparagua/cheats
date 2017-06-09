@@ -2,7 +2,7 @@
 
 ## O(1)
 
-Execution time is constant regardless of input size.
+- Execution time is constant regardless of input size.
 
 ```ruby
 def first_is_nil?(input)
@@ -12,7 +12,7 @@ end
 
 ## O(N)
 
-Execution time is directly proportional to the input size.
+- Execution time is directly proportional to the input size.
 
 ```ruby
 def has_nil?(input)
@@ -25,6 +25,22 @@ end
 ```
 
 ## O(N^2)
+
+- Execution time is directly proportional to the square of the input size.
+- Common with nested iterations.
+
+```ruby
+def has_duplicate?(input)
+  input.each_with_index do |element, i|
+    input.each do |possible_duplicate, k|
+      next if i == k
+      return true if element == possible_duplicate
+    end
+  end
+  
+  false
+end
+```
 
 ## O(2^N)
 
