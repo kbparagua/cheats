@@ -49,7 +49,10 @@ Types:
 - `boolean`
 - `integer`
 - `float`
-- `number`
+- `number` (float or integer)
+- `atom`
+- `list`
+- `tuple`
 
 Example:
 ```elixir
