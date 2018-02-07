@@ -9,6 +9,11 @@ true      # boolean
 [1, 2, 3] # list
 {1, 2, 3} # tuple
 ```
+## Output
+
+```elixir
+IO.puts "Hello World"
+```
 
 ## Basic Arithmetic
 
@@ -57,4 +62,18 @@ Types:
 Example:
 ```elixir
 is_boolean(true) # true
+```
+
+## Strings
+
+Interpolation
+```elixir
+"Hello #{:world}" # Hello world
+```
+
+### String functions
+
+```elixir
+String.length "Hello" # 5
+String.upcase "hello" # "HELLO"
 ```
