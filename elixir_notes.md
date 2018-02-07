@@ -17,22 +17,22 @@ true      # boolean
 10 / 2 # 5.0
 ```
 
-use `div/2` for integer result.
+`div/2` for integer result.
 ```elixir
 div(10, 2) # 5
 ```
 
-use `rem/2` to get division remainder.
+`rem/2` to get division remainder.
 ```elixir
 rem(10, 3) # 1
 ```
 
-use `round/1` to get closes integer.
+`round/1` to get closes integer.
 ```elixir
 round(3.58) # 4
 ```
 
-use `trunc/1` to get integer part of float.
+`trunc/1` to get integer part of float.
 ```elixir
 trunc(3.58) # 3
 ```
