@@ -36,3 +36,22 @@ round(3.58) # 4
 ```elixir
 trunc(3.58) # 3
 ```
+
+## Identifying Functions
+
+Name + Arity *(number of arguments)*. Example: `div/2`
+
+## Type Checking
+
+`is_<type>/1`.
+
+Types:
+- `boolean`
+- `integer`
+- `float`
+- `number`
+
+Example:
+```elixir
+is_boolean(true) # true
+```
