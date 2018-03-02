@@ -1,6 +1,4 @@
-# Elixir Notes
-
-## Pattern Matching
+# Pattern Matching
 
 `a = 1 # 1` - this is NOT an assignment statement! This is a match statement! Wat!?
 
@@ -42,7 +40,18 @@ If a value/constant doesn't match, then it will raise an error.
 ["YES", word] = ["NO", "Shit"]
 # This will not match since the expression side's first element should be "YES"
 ```
+## Underscore
 
+Use the special variable `_` if you do not care about a specific value in a pattern.
+
+```
+[x, y, _] = [1, 2, "Garbage shit"]
+x # 1
+y # 2
+_ # Error! You cannot read this shit.
+```
+
+## Pin Operator
 To use the variable's value in the pattern side, use the pin operator `^`.
 ```
 x = 1
