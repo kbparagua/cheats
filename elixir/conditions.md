@@ -1,5 +1,19 @@
 # Conditions
 
+## `if` and `unless`
+```elixir
+if true do
+  "Orayt!"
+else
+  "Shhit"  
+end
+```
+
+### Alternate Syntax
+```elixir
+if true, do: "Orayt!", else: "Shhit"
+```
+
 ## `case`
 
 ```elixir
