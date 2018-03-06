@@ -93,3 +93,21 @@ When all keys are atoms.
 ```elixir
 map = %{a: 1, b: 2}
 ```
+
+
+# Nested Structure
+
+```elixir
+users = [
+  bob: %{age: 5},
+  alice: %{age: 10}
+]
+
+users[:bob].age # 5
+```
+
+## Updating Value
+
+```elixir
+put_in users[:alice].age, 12
+```
