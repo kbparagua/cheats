@@ -50,5 +50,33 @@ defmodule Math do
   def zero?(0), do: true
   def zero?(x) when is_integer(x), do: false
 end
+```
 
+## Function Capture
+
+Something like function reference.
+
+```elixir
+defmodule Foo do
+  def bar do
+    IO.puts "Blah Blah"
+  end
+end
+
+fun = &Foo.bar/0
+fun.() # "Blah Blah"
+is_function(fun) # true
+```
+
+## Function Creation Shortcut
+```elixir
+fun = &(&1 + 1)
+fun.(2) # 3
+```
+
+`&1` - represents 1st argument.
+
+code above is similar to:
+```elixir
+fun = fn x -> x + 1 end
 ```
