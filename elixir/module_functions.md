@@ -80,3 +80,17 @@ code above is similar to:
 ```elixir
 fun = fn x -> x + 1 end
 ```
+
+## Default Arguments
+
+```elixir
+defmodule Foo do
+  def bar(x \\ "Hello") do
+    IO.puts x
+  end
+end
+
+Foo.bar() # "Hello"
+```
+
+- default value is evaluated EVERY function call.
